@@ -1,0 +1,68 @@
+h1 {
+  color: #878787;
+  font-size: 30px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  padding-top: 20px;
+}
+
+.search-bar {
+  padding-left: 30px;
+}
+
+.week {
+  font-size: 25px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.emoji {
+  font-size: 20px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.temperature {
+  font-size: 25px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  color: #f75282;
+}
+
+.degree {
+  font-size: 100px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.date-time {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Roboto Slab", serif;
+  padding-top: 5px;
+}
+
+.humidity-wind {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Roboto Slab", serif;
+  padding-top: 5px;
+}
+
+.card {
+  max-width: 850px;
+  background-color: #f8f5ff;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+}
