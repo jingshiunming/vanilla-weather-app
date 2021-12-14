@@ -38,6 +38,12 @@ h2 {
   color: #f75282;
 }
 
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -55px;
+}
+
 .degree {
   font-size: 100px;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
