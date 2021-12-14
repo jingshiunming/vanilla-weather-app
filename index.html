@@ -32,12 +32,17 @@
           <p class="card-text">
             <div class="row">
     <div class="row row-cols-2">
-    <h2>MILAN
-<div class ="date-time">date and time</div>
-<div class ="humidity-wind">humidity and wind</div>
+    <h2><span id="city">MILAN</span>
+      <ul>
+        <li>date and time </li>   
+        <li id="description">description</li>
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span> km/H</li>
+      </ul>
+
     </h2>
     
-    <p class="degree">0<span class="units">°C |<a href="#">°F</a></span></p>
+    <p class="degree"><span id="temperature">0</span><span class="units">°C |<a href="#">°F</a></span></p>
   </div>
   </div>
   <br>
