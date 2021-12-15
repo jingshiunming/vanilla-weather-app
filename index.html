@@ -28,11 +28,11 @@
     <div class="container">
       <div class="card w-75">
         <div class="card-body">
-          <h1 class="card-title">WEATHER FORECAST</h1>
+          <h1><span id="city">Milan</span></h1>
           <p class="card-text">
             <div class="row">
     <div class="row row-cols-3">
-    <h2><span id="city">Milan</span>
+    <h2>
       <ul>
         <li id="date" class="date">date and time </li>   
         <li></li>
@@ -48,10 +48,16 @@
   </div>
   </div>
   <br>
-  <form>
-    <div class ="row">
-      <div class = "col-9">
-        <input type="search" placeholder="ENTER A CITY" class="form-control search-input" id="cityname" />
+  <form id="search-form">
+    <div class="row">
+      <div class="col-9">
+        <input 
+        type="search" 
+        placeholder="Enter a city name..." 
+        class="form-control" 
+        id="city-input"
+        autocomplete="off" 
+        />
       </div>
       <div class="col-3 p-0">
         <input type="submit" class="btn btn-primary w-70" value="Search">
