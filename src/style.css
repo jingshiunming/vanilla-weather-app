@@ -29,6 +29,10 @@ h2 {
   padding-top: 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .temperature {
   font-size: 25px;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
