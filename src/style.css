@@ -86,3 +86,7 @@ li {
   width: 170px;
   height: 150px;
 }
+
+.active {
+  cursor: default;
+}
