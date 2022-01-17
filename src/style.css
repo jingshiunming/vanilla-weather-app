@@ -90,3 +90,8 @@ li {
 .active {
   cursor: default;
 }
+
+.weather-predict {
+  margin-top: 20px;
+  text-align: center;
+}
