@@ -114,8 +114,28 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+function romeWeather(event) {
+  search("Rome");
+}
+
+function bangkokWeather(event) {
+  search("Bangkok");
+}
+
+function barcelonaWeather(event) {
+  search("Barcelona");
+}
+
+let rome = document.querySelector("#rome");
+rome.addEventListener("click", romeWeather);
+
+let bangkok = document.querySelector("#bangkok");
+bangkok.addEventListener("click", bangkokWeather);
+
+let barcelona = document.querySelector("#barcelona");
+barcelona.addEventListener("click", barcelonaWeather);
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 search("Milan");
-displayForecast();
