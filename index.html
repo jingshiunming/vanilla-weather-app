@@ -10,9 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto+Slab&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto+Slab&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,69 +29,96 @@
   </head>
   <body>
     <div class="container">
-      <div class="card w-75">
+      <div class="card">
         <div class="card-body">
-          <h1><span id="city">Milan</span></h1>
-          <p class="card-text">
+          <h1 class="mb-3"><span id="city">Milan</span></h1>
+          <p class="card-text"></p>
+          <div class="row">
+            <div class="col-sm-5">
+              <h2>
+                <ul>
+                  <li id="date" class="date mb-3">date and time</li>
+                  <li id="description" class="description">description</li>
+                  <li class="humidity">
+                    Humidity: <span id="humidity"></span>%
+                  </li>
+                  <li class="wind">Wind: <span id="wind"></span> km/H</li>
+                </ul>
+              </h2>
+            </div>
+              <div class="col-sm-3">
+                <img src="" alt="" class="icon" id="icon" class="float-left" />
+              </div>
+              <div class="col-sm-4">
+                <p class="degree">
+                  <span id="temperature">0</span><span class="units">°C</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <form id="search-form">
             <div class="row">
-    <div class="row row-cols-3">
-    <h2>
-      <ul>
-        <li id="date" class="date">date and time </li>   
-        <li></li>
-        <li id="description">description</li>
-        <li>Humidity: <span id="humidity"></span>%</li>
-        <li>Wind: <span id="wind"></span> km/H</li>
-      </ul>
-    </h2>
-    
-    <img src="" alt="" class="icon" id="icon" class="float-left"/>
-
-    <p class="degree"><span id="temperature">0</span><span class="units">°C</span></p>
-  </div>
-  </div>
-  <br>
-  <form id="search-form">
-    <div class="row">
-      <div class="col-9">
-        <input 
-        type="search" 
-        placeholder="Enter a city name..." 
-        class="form-control" 
-        id="city-input"
-        autocomplete="off" 
-        />
-      </div>
-      <div class="col-3 p-0">
-        <input type="submit" class="btn btn-primary w-70" value="Search">
-      </div>
-    </div>
-  </form>
-  <br>
-  <br>
-  <div class="weather-forecast" id="forecast">
-  </div>
-          </p>
-          <br>
-          <br>
-<p class="favorites">FAVORITES:</p>          
-<div class="container">
-  <div class="row row-cols-3 favorite-city">
-    <div class="col"><button type="button" class="btn btn-outline-primary" id="rome">ROMA</button></div>
-    <div class="col"><button type="button" class="btn btn-outline-primary" id="bangkok">BANGKOK</button></div>
-    <div class="col"><button type="button" class="btn btn-outline-primary" id="barcelona">BARCELONA</button></div>
-  </div>
-</div>  
-<br>
-<br>        
-           <hr />
-      <footer>
-        This project is coded by Jing Shiun Ming and is open-sourced on GitHub
-        and hosted on <a href="https://cranky-noether-9b37ad.netlify.app/">Netlify</a>
-      </footer>
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city name..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3 p-0">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-70"
+                  value="Search"
+                />
+              </div>
+            </div>
+          </form>
+          <br />
+          <br />
+          <div class="weather-forecast" id="forecast"></div>
+          <p class="favorites mt-5"><strong>FAVORITE CITIES:</strong></p>
+          <div class="container">
+            <div class="row row-cols-3 favorite-city">
+              <div class="col">
+                <button type="button" class="btn btn-outline-primary" id="rome">
+                  ROMA
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="bangkok"
+                >
+                  BANGKOK
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="barcelona"
+                >
+                  BARCELONA
+                </button>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <hr />
+          <footer>
+            This project is coded by Jing Shiun Ming and is open-sourced on
+            GitHub and hosted on
+            <a href="https://cranky-noether-9b37ad.netlify.app/">Netlify</a>
+          </footer>
         </div>
       </div>
-      <br />   
+      <br />
       <script src="src/app.js"></script>
     </div>
   </body>
