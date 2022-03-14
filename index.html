@@ -47,7 +47,7 @@
               </h2>
             </div>
               <div class="col-sm-3">
-                <img src="" alt="" class="icon" id="icon" class="float-left" />
+                <img src="" alt="" class="icon" id="icon"/>
               </div>
               <div class="col-sm-4">
                 <p class="degree">
@@ -56,8 +56,7 @@
               </div>
             </div>
           </div>
-          <br />
-          <form id="search-form">
+          <form id="search-form" class="mb-4">
             <div class="row">
               <div class="col-9">
                 <input
@@ -77,30 +76,32 @@
               </div>
             </div>
           </form>
-          <br />
-          <br />
           <div class="weather-forecast" id="forecast"></div>
           <p class="favorites mt-5"><strong>FAVORITE CITIES:</strong></p>
-          <div class="container">
-            <div class="row row-cols-3 favorite-city">
-              <div class="col">
-                <button type="button" class="btn btn-outline-primary" id="rome">
+          <div class="container mt-2 mb-5">
+            <div class="row">
+              <div class="col-sm-4">
+                <button 
+                  type="button" 
+                  class="btn btn-outline-primary favorite-city" 
+                  id="rome"
+                >
                   ROMA
                 </button>
               </div>
-              <div class="col">
+              <div class="col-sm-4">
                 <button
                   type="button"
-                  class="btn btn-outline-primary"
+                  class="btn btn-outline-primary favorite-city"
                   id="bangkok"
                 >
                   BANGKOK
                 </button>
               </div>
-              <div class="col">
+              <div class="col-sm-4">
                 <button
                   type="button"
-                  class="btn btn-outline-primary"
+                  class="btn btn-outline-primary favorite-city"
                   id="barcelona"
                 >
                   BARCELONA
@@ -108,8 +109,6 @@
               </div>
             </div>
           </div>
-          <br />
-          <br />
           <hr />
           <footer>
             This project is coded by Jing Shiun Ming and is open-sourced on
